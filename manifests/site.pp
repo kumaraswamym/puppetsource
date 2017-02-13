@@ -50,4 +50,6 @@ include ssh
 include demo
 include demo::variables
 include demo::rc
+include ntp
+include apache
 }
