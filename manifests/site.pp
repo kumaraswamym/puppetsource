@@ -44,12 +44,15 @@ node default {
 
 node /^marusani\d{1}.mylabserver.com$/ {
 $nodevariable = "456"
-include systemusers
-include ssh::parameters
-include ssh
-include demo
-include demo::variables
-include demo::rc
-include ntp
+include ssh 
+}
+
+node "marusani4.mylabserver.com" {
+include hdemo
+
+}
+
+node "stm" {
 include apache
+
 }
